@@ -11,6 +11,7 @@
             <Label Text="Welcome to the Dogs App!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Open Google" Command="{Binding OpenGoogleCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
