@@ -12,6 +12,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Open Google" Command="{Binding OpenGoogleCommand}"/>
+            <Button Text="Open Dogs API" Command="{Binding OpenDogsAPICommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

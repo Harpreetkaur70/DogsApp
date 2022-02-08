@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DogsApp.Services;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +11,7 @@ namespace DogsApp
         public App()
         {
             InitializeComponent();
+            DependencyService.Register<IWebClientService>();
             MainPage = new AppShell();
         }
 
