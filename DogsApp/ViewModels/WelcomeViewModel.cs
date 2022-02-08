@@ -26,7 +26,8 @@ namespace DogsApp.ViewModels
         {
             var service = DependencyService.Get<IWebClientService>();
             var content = await service.GetString("https://dog.ceo/api/breeds/list/all");
-
+            var emailServices = DependencyService.Get<IEmailClientService>();
+            var reponse = emailServices.SendEmail("toperson", "fromthisperson", "subject", "body");
         }
 
         private async Task OpenGoogle()
